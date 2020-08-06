@@ -23,11 +23,11 @@ jobs:
 				
             - name: Build
               run: |
-				mkdir -p ./targets
-				cd ./targets
+                mkdir -p ./targets
+                cd ./targets
                 git clone https://github.com/ziahamza/webui-aria2.git
-				cd webui-aria2
-				npm install
+                cd webui-aria2
+                npm install
 				
             - name: Deploy
               run: |
