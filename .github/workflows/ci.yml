@@ -20,7 +20,7 @@ jobs:
               uses: actions/setup-node@v1
               with:
                 node-version: '12.x'
-				
+                	
             - name: Build
               run: |
                 mkdir -p ./targets
@@ -28,13 +28,13 @@ jobs:
                 git clone https://github.com/ziahamza/webui-aria2.git
                 cd webui-aria2
                 npm install
-				
+                	
             - name: Deploy
               run: |
                 cd ./targets
                 tar czvf aria2.tar.gz webui-aria2
                 rm -rf webui-aria2
-				
+                
             - name: Upload
               uses: actions/upload-artifact@master
               with:
