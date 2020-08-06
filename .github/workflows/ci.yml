@@ -27,6 +27,7 @@ jobs:
                 cd ./targets
                 git clone https://github.com/ziahamza/webui-aria2.git
                 cd webui-aria2
+                npm i node-sass
                 npm install
 
             - name: Deploy
